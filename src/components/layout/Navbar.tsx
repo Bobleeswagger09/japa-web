@@ -5,11 +5,14 @@ import PlayIcon from '@/assets/icons/home/play.svg';
 import Image from 'next/image';
 import MobileMenu from './MobileMenu';
 import { mainVideoLink } from '@/functions/variables';
+import JapaLogo from '../../assets/brand/JapaLogo.svg'
 
 const Navbar = () => {
   return (
-    <nav className='h-fit w-full bg-white flex items-center justify-between px-primary gap-[45px]  py-4 md:py-[26px] sticky top-0 z-20'>
-      <div className='flex-[50%] items-center justify-center gap-[3vw] hidden md:flex'>
+    <nav className='h-fit w-full bg-white flex items-center justify-between px-primary gap-[45px]  py-4 md:py-[26px] sticky top-0 z-20 mt-4'>
+      <Image src={JapaLogo} width={100} height={100} alt="japa Logo" className='md:w-[8rem] lg:w-[12rem]'/> 
+
+      <div className='flex-[50%] items-center justify-center gap-[3vw] hidden md:flex text-2xl'>
         {navLinks.map((link) => (
           <Link key={link.href} href={link.href} className='hover:border-b-2 hover:border-purple-500 hover:text-purple-500'>
             {link.label}

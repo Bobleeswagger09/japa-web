@@ -21,7 +21,7 @@
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
     "formik": "^2.4.2",
-    "next": "13.4.12",
+    "next": "^13.4.12",
     "postcss": "8.4.27",
     "react": "18.2.0",
     "react-click-away-listener": "^2.2.3",
@@ -37,5 +37,9 @@
     "yarn": "^1.22.19",
     "yup": "^1.2.0",
     "yup-password": "^0.2.2"
-  }
+  },
+  "description": "- Next JS\r - Redux Toolkit\r - Tailwind CSS\r - Typescript\r - Along with Select, toast, form, fonts and modal components",
+  "main": "next.config.js",
+  "author": "",
+  "license": "ISC"
 }
